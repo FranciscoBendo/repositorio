@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+
+struct endereco
+{
+    char bairro[50];
+    int numeroDaCasa;
+};
+
+struct funcionario
+{
+    char nome[50];
+    int idade;
+    struct endereco;
+};
+
+int main(){
+    struct endereco ENDERECO;
+    struct funcionario FUNCIONARIO;
+
+    printf("Digite o bairro e o numero da casa do empregado\n");
+    scanf("%s", &ENDERECO.bairro[50]);
+    scanf("%d", &ENDERECO.numeroDaCasa);
+
+    printf("Digite o nome e a idade do funcionario\n");
+    scanf("%s", &FUNCIONARIO.nome[50]);
+    scanf("%d", &FUNCIONARIO.idade);
+
+    printf("Os dados do seu funcionario sao:\n%s\n%d\n%s\n%d", &FUNCIONARIO.nome[50], FUNCIONARIO.idade, &ENDERECO.bairro[50], ENDERECO.numeroDaCasa);
+    //os dados do tipo char saem incompletos e eu não entendo o porque.
+
+
+}
