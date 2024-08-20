@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int valor = 10;
+    int *ponteiro;
+    ponteiro = &valor;
+    printf("Conteudo de valor: %d \n", valor);
+    printf("Endereço de memória de valor: %d \n", &valor);
+    printf("Conteudo do ponteiro: %d \n", ponteiro);
+    printf("Endereço de memória do ponteiro: %d \n", &ponteiro);
+    printf("Endereço de memória do ponteiro (hexadecimal): %x \n", &ponteiro);
+
+
+    return 0;
+}//declarar ponteiro, pintar valor, espaço de memoria numerica e hexadecimal
