@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+
+struct aluno 
+{
+    char nome[100];
+};
+
+int main(){
+struct aluno ALUNO;
+
+printf("Digite seu nome:\n");
+
+scanf("%s", &ALUNO.nome);
+
+printf("\nSeu nome e: %s", ALUNO.nome);
+}
