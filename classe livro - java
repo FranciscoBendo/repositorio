@@ -1,0 +1,12 @@
+package produto;
+
+public class Livro {
+    public static void main(String[] args) {
+        String nome = "Banana";
+        double preco = 99.9;
+        String autor = "Banana da Silva";
+        int dataDePublicacao = 150224;
+
+        System.out.printf("Nome: " + nome + "\nPreco: " + preco + "\nAutor: " + autor + "\nData de publicacao: " + dataDePublicacao);
+    }
+}
